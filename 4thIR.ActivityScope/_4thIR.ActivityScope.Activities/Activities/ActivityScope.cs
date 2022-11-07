@@ -7,6 +7,7 @@ using System.ComponentModel;
 using _4thIR.ActivityScope.Activities.Properties;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
+using System.Net.Http;
 
 namespace _4thIR.ActivityScope.Activities
 {
@@ -14,6 +15,8 @@ namespace _4thIR.ActivityScope.Activities
     [LocalizedDescription(nameof(Resources.ActivityScope_Description))]
     public class ActivityScope : ContinuableAsyncNativeActivity
     {
+        public readonly HttpClient client = new HttpClient();
+
         #region Properties
 
         [Browsable(false)]
@@ -67,7 +70,9 @@ namespace _4thIR.ActivityScope.Activities
 
         protected override async Task<Action<NativeActivityContext>> ExecuteAsync(NativeActivityContext  context, CancellationToken cancellationToken)
         {
+
             // Inputs
+            _objectContainer.Add<HttpClient>(client);
 
             return (ctx) => {
                 // Schedule child activities
