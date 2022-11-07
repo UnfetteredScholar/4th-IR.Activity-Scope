@@ -3,12 +3,26 @@
     <TargetFrameworks>net6.0</TargetFrameworks>
 		<RootNamespace>_4thIR.ActivityScope.Activities</RootNamespace>
 		<AssemblyName>_4thIR.ActivityScope.Activities</AssemblyName>
-    <PackageId>_4thIR.ActivityScope.Activities.Implementation</PackageId>
+    <PackageId>4thIR.ActivityScope.Activity.Implementation</PackageId>
   </PropertyGroup>
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\_4thIR.ActivityScope.Activities.xml</DocumentationFile>
+    <Title>4th-IR Activity Scope</Title>
+    <Authors>Ato Toffah</Authors>
+    <Company>4th-IR</Company>
+    <Copyright>© 2022 4th-IR</Copyright>
+    <PackageIcon>logo2.png</PackageIcon>
+    <PackageProjectUrl>https://www.4th-ir.com</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/UnfetteredScholar/4th-IR.Activity-Scope.git</RepositoryUrl>
+    <Description>Scope for 4th-IR Activities.</Description>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\Logo\logo2.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
     <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-20220909-01" PrivateAssets="All" />
