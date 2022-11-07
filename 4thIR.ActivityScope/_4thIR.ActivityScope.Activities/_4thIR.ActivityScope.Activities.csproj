@@ -16,6 +16,7 @@
     <PackageProjectUrl>https://www.4th-ir.com</PackageProjectUrl>
     <RepositoryUrl>https://github.com/UnfetteredScholar/4th-IR.Activity-Scope.git</RepositoryUrl>
     <Description>Scope for 4th-IR Activities.</Description>
+    <Version>1.1.0</Version>
   </PropertyGroup>
   <ItemGroup>
     <None Include="..\..\Logo\logo2.png">

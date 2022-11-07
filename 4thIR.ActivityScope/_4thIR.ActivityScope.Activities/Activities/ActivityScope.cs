@@ -31,7 +31,7 @@ namespace _4thIR.ActivityScope.Activities
         public override InArgument<bool> ContinueOnError { get; set; }
 
         // A tag used to identify the scope in the activity context
-        internal static string ParentContainerPropertyTag => "ScopeActivity";
+        public static string ParentContainerPropertyTag => "ScopeActivity";
 
         // Object Container: Add strongly-typed objects here and they will be available in the scope's child activities.
         private readonly IObjectContainer _objectContainer;
